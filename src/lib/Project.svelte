@@ -13,8 +13,15 @@
 </article>
 
 <style>
-    p {
-        font-size: 0.7em;
+    article{
+	margin: 0.5em;
+	display: grid;
+	grid-template-rows: subgrid;
+	grid-row: span 3;
+    }
+
+    article h2{
+        margin: 0;
     }
     img {
         height: 12em;

@@ -1,14 +1,28 @@
+// alert("IT’S ALIVE!");
 
+/* function $$ (selector, context = document) {
+	return Array.from(context.querySelectorAll(selector));
+}
 
-// const ARE_WE_HOME = document.documentElement.classList.contains("home");
+let navLinks = $$("nav a");
 
-// let pages = [
-// 	{url: ".", title: "Home"},
-// 	{url: "projects", title: "Projects"},
-// 	{url: "contact", title: "Contact"},
-//     {url: "resume", title: "Resume"},
-//     {url: "https://github.com/Mike-Kowalski", title:"Github"}
-// ];
+let currentLink = navLinks.find(
+    a => a.host === location.host && a.pathname === location.pathname
+);
+
+if (currentLink) { // or if (currentLink !== undefined)
+	currentLink.classList.add("current");
+} */
+
+const ARE_WE_HOME = document.documentElement.classList.contains("home");
+
+let pages = [
+	{url: ".", title: "Home"},
+	{url: "./projects", title: "Projects"},
+	{url: "./contact", title: "Contact"},
+    {url: "./resume", title: "Resume"},
+    {url: "https://github.com/Mike-Kowalski", title:"Github"}
+];
 
 // let nav = document.createElement("nav");
 // document.body.prepend(nav);
@@ -19,8 +33,8 @@
 
 // 	// if (!ARE_WE_HOME && !url.startsWith("http")) {
 // 	// 	url = "../" + url;
-// 	// }
-
+// 	// }	
+	
 // 	let a = document.createElement("a");
 // 	a.href = url;
 // 	a.textContent = title;
